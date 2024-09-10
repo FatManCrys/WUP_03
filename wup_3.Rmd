@@ -50,13 +50,13 @@ the probability of getting these results are one out of ten thousand, Now a furt
 ```{r}
 par(mar = c(3, 8.7, 2, 2))
 plot(TukeyHSD(model1),las=2)
-``` 
+```  
 
-The front and the back are different. The middle and the front are not different. the back is different from the front and the back.  
+The front and the back are different. The middle and the front are not different. the back is different from the front and the back.   
 
 
 
 ## Conclusions
 
-
+i did a box plot that showed visably the results and differences of how much of what row drinks alcohol. The i did a summary of the numerical results which showed that the back seat drank twice as much than the front and middle seats. When there are three or more things to compare you run a qualifying test that is one way anowa. When you run your inferential test and the probability is between 0 and 1 than you need to investigate further the results and run another test.
 
