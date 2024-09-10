@@ -32,8 +32,20 @@ boxplot(alcohol~Seat,data=davisdata)
   the boxes are not disjointed. The back box median is higher than the front and middle box. The front and middle box are similar in size but there are more out liars in the middle box 
   
 ## Numerical Summarys 
+```{r}
+favstats(alcohol~Seat,data=davisdata)
+``` 
+
+
+
+The front and back seats has around the same number of people while the back seats has more than twice their numbers. This summary shows that while the back seat had 32 people the backseat had a max of 55 drinks which is twice the numbers of front and middle seats. The average of drinks the back seat are at 9.6and the drinks for the front seat are about 2 and the back has a median of about 3. 
 
 ## Inferential Tests
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+
 
 ## Conclusions
 
