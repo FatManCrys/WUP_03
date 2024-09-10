@@ -1,7 +1,7 @@
 ---
 title: "Alcohol vs Seat choice"
-author: "Your Name"
-date: "Fall 2020"
+author: "David Acevedo"
+date: "Fall 2024"
 output: html_document
 ---
 
@@ -25,16 +25,12 @@ basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 ## Now add in boxplot
 
 ```{r}
-basicCN + geom_boxplot()
-```
+boxplot(alcohol~Seat,data=davisdata)
+``` 
   
   
-### get fancy  
-
-```{r}
-basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
-```
-
+  the boxes are not disjointed. The back box median is higher than the front and middle box. The front and middle box are similar in size but there are more out liars in the middle box 
+  
 ## Numerical Summarys 
 
 ## Inferential Tests
